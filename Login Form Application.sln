@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Login Form Application", "Login Form Application\Login Form Application.vbproj", "{D8D7DEB0-80F3-4F01-AD1A-63EEDADA3A1A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Login Project", "Login Project\Login Project.vdproj", "{61B2E86C-EFBB-482C-8E27-252E6B671AAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8D7DEB0-80F3-4F01-AD1A-63EEDADA3A1A}.Debug|x86.ActiveCfg = Debug|x86
+		{D8D7DEB0-80F3-4F01-AD1A-63EEDADA3A1A}.Debug|x86.Build.0 = Debug|x86
+		{D8D7DEB0-80F3-4F01-AD1A-63EEDADA3A1A}.Release|x86.ActiveCfg = Release|x86
+		{D8D7DEB0-80F3-4F01-AD1A-63EEDADA3A1A}.Release|x86.Build.0 = Release|x86
+		{61B2E86C-EFBB-482C-8E27-252E6B671AAC}.Debug|x86.ActiveCfg = Debug
+		{61B2E86C-EFBB-482C-8E27-252E6B671AAC}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

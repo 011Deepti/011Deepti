@@ -1,0 +1,66 @@
+<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="WebForm1.aspx.vb" Inherits="User_Registration.WebForm1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table align="center" style="height: 580px; width: 546px">
+                <tr>
+                    <td>FullName</td>
+                    <td>
+                        <asp:TextBox ID="txtName" runat="server" placeholder="enter your full name"></asp:TextBox></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>
+                        <asp:TextBox ID="txtAdd" runat="server" placeholder="enter your address"></asp:TextBox></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        
+                        <asp:RadioButton  GroupName="user" ID="RadioButton1" runat="server" Text="Male" /><br />
+                        <asp:RadioButton  GroupName="user" ID="RadioButton2" runat="server" Text="Female"/><br />
+                        <asp:RadioButton  GroupName="user" ID="RadioButton3" runat="server"  Text="Others"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>
+                        <asp:TextBox ID="txtPhone" runat="server" placeholder="+977-012-345-6789"></asp:TextBox></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <asp:TextBox ID="txtEmail" runat="server" placeholder="example@example.com" TextMode="Email"></asp:TextBox>
+                        </td>
+                </tr>
+             <tr>
+                 <td>Username</td>
+                 <td>
+                     <asp:TextBox ID="txtUser" runat="server" placeholder="enter username"></asp:TextBox>
+                     </td>
+             </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <asp:TextBox ID="txtpass" runat="server" placeholder="*****" TextMode="Password"></asp:TextBox> </td>
+                </tr>
+               
+
+                <tr>
+                    <td></td>
+                    <td align="right">
+                        <asp:Button ID="btnReg" runat="server" Text="Register" /></td>
+                </tr>
+
+            </table>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+html, body {
+  background-color: black;
+  display: block;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  width: 100%;
+}
+canvas {
+  border:1px solid #000000;
+  background-color: #000000;
+}
+#div1 {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 5mm;
+}
+#div2 {
+  display: block;
+  float: left;
+  width: 30%;
+  font-size: 5mm;
+  height: 200px;
+  background-color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#div3 {
+  display: block;
+  float: left;
+  width: 30%;
+  font-size: 5mm;
+  height: 200px;
+  background-color: red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#div4 {
+  display: block;
+  float: left;
+  width: 40%;
+  font-size: 5mm;
+  height: 200px;
+  background-color: green;
+  font-family: Arial, Helvetica, sans-serif;
+}

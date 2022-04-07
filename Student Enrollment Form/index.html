@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="scripts/form.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="main-tittle">Assignment : 2</h1>
+            <h2>Create a student enrollment form:</h2>
+
+            <div class="row">
+                <div class="form-box">
+                    <div class="form-tittle"><h2>Student Enrollment Form</h2></div>
+                    <div class="flex-row">
+                        <div id="enroll-form" class=" flex-item enroll-form">
+                            <form action="" method="post" id="enrollform">
+                                <div class="form-field">
+                                    <div class="field-flex">
+                                        <div class="field-label">
+                                            <label>Name</label>
+                                        </div>
+                                        <div class="field-input">
+                                            <input type="text" class="validationerror" name="name" id="enrollname" required />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-field">
+                                    <div class="field-flex">
+                                        <div class="field-label">
+                                            <label>Email</label>
+                                        </div>
+                                        <div class="field-input">
+                                            <input id="enrollemail" type="email" name="email" required />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-field">
+                                    <div class="field-flex">
+                                        <div class="field-label">
+                                            <label>Website</label>
+                                        </div>
+                                        <div class="field-input">
+                                            <input id="enrollweblink" type="text" name="weblink" required />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-field">
+                                    <div class="field-flex">
+                                        <div class="field-label">
+                                            <label>Image link</label>
+                                        </div>
+                                        <div class="field-input">
+                                            <input id="enrollimglink" type="text" name="image" required />
+                                            <!-- <input id="fakeinput" type="text" /> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-field">
+                                    <div class="field-flex">
+                                        <div class="field-label">
+                                            <label>Gender</label>
+                                        </div>
+                                        <div class="field-input radio-field">
+                                            <span id="radio-bread"><input id="malegender" type="radio" name="gender" value="Male" checked required />&nbsp; Male&nbsp;&nbsp;</span>
+                                            <span><input id="femalegender" type="radio" name="gender" value="female" />&nbsp; Female</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-field checkbox-field">
+                                    <div class="field-flex">
+                                        <div class="field-label">
+                                            <label>Skills</label>
+                                        </div>
+                                        <div class="field-input">
+                                            <input type="checkbox" name="skills[]" id="enrollskilljava" value="java" checked/>&nbsp;&nbsp;Java&nbsp;
+                                            <input type="checkbox" name="skills[]" value="html" />&nbsp;&nbsp;HTML&nbsp;
+                                            <input type="checkbox" name="skills[]" value="CSS" />&nbsp;&nbsp;CSS&nbsp;
+                                            <!--
+                                                <span><input type="checkbox" name="skills[]" value="html"/>&nbsp;&nbsp;HTML&nbsp;</span>
+                                                
+                                                <br/> If  more then 4 field use br tag
+
+                                                <span><input type="checkbox" name="skills[]" value="html"/>&nbsp;&nbsp;HTML&nbsp;</span>
+                                            -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-field enroll-button-field">
+                                    <div class="field-flex">
+                                        <!-- <div class="field-label">
+                                            
+                                        </div> -->
+                                        <div class="field-input">
+                                            <input type="button" onclick="checkform()" class="enroll-submit" name="enroll-submit" value="Enroll Student" />
+                                            <input type="button" name="clear" class="enroll-clear" onclick="clearvalue()" value="Clear" />    
+                                        </div>
+                                    </div>
+                                </div>
+     
+                            </form>
+                            
+                           
+                        </div>
+                        <div id="enroll-list" class="flex-item enroll-list">
+                            <div class="enroll-list-tittle"><h2>Enrolled Student</h2></div>
+
+                            <div class="enroll-block-box" >
+                                <div class="table-box" id="enroll-data">
+                                    <div class="table-head">
+                                        <div class="desp-tittle"><h5>Description</h5></div>
+                                        <div class="img-tittle"><h5>Image</h5></div>
+                                    </div>
+                                    <div class="tabel-data">
+                                        <div class="tabel-data-desc">
+                                            <!-- Name -->       <span class="first-name">Ritu</span>
+                                            <!-- Gender -->     <span>Female</span>
+                                            <!-- Email -->      <span><a href="#">ritu@gmail.com</a></span>
+                                            <!-- Website -->    <span>www.ritu.com</span>
+                                            <!-- Skills -->     <span>Java, Html </span>
+                                            
+                                        </div>
+                                        <div class="tabel-data-img">
+                                            <img src="profile.jpeg.jpg">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
